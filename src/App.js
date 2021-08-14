@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 
-import { AuthProvider } from './components/AuthContext'
+import { AuthProvider } from './contexts/AuthContext'
 import Routes from './routes/routes'
 
 // Global styles (Should be at top, else it will override component specific styles)
