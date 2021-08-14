@@ -1,0 +1,48 @@
+header {
+  min-height: var(--header-height);
+  background-color: var(--primary-color);
+  color: var(--primary-color-alt);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: var(--primary-color-alt);
+}
+
+header .logo {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header nav .nav-list {
+  display: flex;
+  flex-direction: row;
+}
+
+header nav .nav-item,
+header nav .nav-item a {
+  padding: 0.5rem;
+}
+
+header .auth {
+  display: flex;
+  align-items: center;
+  padding-left: 2.5rem;
+}
+
+header nav .profile {
+  display: flex;
+  flex-flow: column;
+}
+
+.header nav .profile .muted {
+  font-size: 0.75rem;
+}
