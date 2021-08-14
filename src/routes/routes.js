@@ -6,8 +6,6 @@ import ProtectedRoute from '../routes/ProtectedRoute'
 import HomePage from '../pages/home/HomePage'
 import RegisterPage from '../pages/register/RegisterPage'
 import LoginPage from '../pages/login/LoginPage'
-import ForgotPasswordPage from '../pages/forgot-password/ForgotPasswordPage'
-import ResetPasswordPage from '../pages/reset-password/ResetPasswordPage'
 
 import ProtectedPage from '../pages/protected-page/ProtectedPage'
 import ProfilePage from '../pages/user/profile/ProfilePage'
@@ -19,8 +17,6 @@ export const paths = {
   HOME: '/',
   REGISTER: '/register',
   LOGIN: '/login',
-  FORGOT_PASSWORD: '/forgot-password',
-  RESET_PASSWORD: '/reset-password',
   PROTECTED_PAGE: '/protected-page',
   PROFILE: '/user/profile',
   PERMISSION_DENIED: '/permission-denied',
@@ -35,8 +31,6 @@ const Routes = () => {
         <Route exact path={paths.HOME} component={HomePage} />
         <Route path={paths.REGISTER} component={RegisterPage} />
         <Route path={paths.LOGIN} component={LoginPage} />
-        <Route path={paths.FORGOT_PASSWORD} component={ForgotPasswordPage} />
-        <Route path={paths.RESET_PASSWORD} component={ResetPasswordPage} />
 
         {/* Private routes */}
         <ProtectedRoute path={paths.PROTECTED_PAGE} component={ProtectedPage} />

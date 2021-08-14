@@ -1,25 +1,32 @@
 import React from 'react'
+import { Redirect } from 'react-router-dom'
 
 import { useAuth } from '../../contexts/AuthContext'
 import { paths } from '../../routes/routes'
 
 import './login.css'
 
-const LoginPage = ({ history, location, ...props }) => {
-  const { state } = location
-  const { login } = useAuth()
+const LoginPage = ({ location }) => {
+  const { isAuthenticated, login } = useAuth()
+
+  if (isAuthenticated) {
+    const { state } = location
+    const redirectPath = state?.from || paths.HOME
+    return <Redirect to={redirectPath} />
+  }
 
   const handleLogin = (e) => {
     e.preventDefault()
 
     login({ name: 'Pugazh', email: 'admin@reactroutes.com' })
-
-    history.push(state?.from || paths.HOME)
   }
 
   return (
-    <div>
-      <button onClick={handleLogin}>Login</button>
+    <div className="login">
+      <div className="title">Login page</div>
+      <div>
+        <button onClick={handleLogin}>Login</button>
+      </div>
     </div>
   )
 }

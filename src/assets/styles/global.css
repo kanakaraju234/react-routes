@@ -6,6 +6,8 @@
   --primary-color-light: dodgerblue;
   --primary-color-alt: white;
   --secondary-color: #444;
+  --text-color: #444;
+  --link-color: #0c6fd1;
 }
 
 * {
@@ -13,6 +15,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  color: var(--text-color);
 }
 
 header,
@@ -24,6 +30,7 @@ footer {
 a {
   text-decoration: none;
   cursor: pointer;
+  color: var(--link-color);
 }
 
 ul {

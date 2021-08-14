@@ -1,0 +1,9 @@
+main .register div {
+  text-align: center;
+}
+
+main .register .title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
