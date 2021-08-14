@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink, Link, useHistory } from 'react-router-dom'
 
-import { useAuth } from '../AuthContext'
+import { useAuth } from '../../contexts/AuthContext'
 import { paths } from '../../routes/routes'
 
 import './header.css'

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { useAuth } from '../../components/AuthContext'
+import { useAuth } from '../../contexts/AuthContext'
 import { paths } from '../../routes/routes'
 
 import './login.css'
