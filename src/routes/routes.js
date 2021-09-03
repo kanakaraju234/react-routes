@@ -13,7 +13,7 @@ import ProfilePage from '../pages/user/profile/ProfilePage'
 import PermissionDeniedPage from '../pages/permission-denied/PermissionDeniedPage'
 import PageNotFoundPage from '../pages/page-not-found/PageNotFoundPage'
 
-export const paths = {
+export const paths = Object.freeze({
   HOME: '/',
   REGISTER: '/register',
   LOGIN: '/login',
@@ -21,7 +21,7 @@ export const paths = {
   PROFILE: '/user/profile',
   PERMISSION_DENIED: '/permission-denied',
   PAGE_NOT_FOUND: '/page-not-found',
-}
+})
 
 const Routes = () => {
   return (
